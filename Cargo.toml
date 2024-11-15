@@ -1,0 +1,18 @@
+[package]
+name = "shyless"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.41.0", features = ["macros", "rt", "rt-multi-thread"] }
+axum = { version = "0.7.7", features = ["macros"] }
+tokio-postgres = "0.7.12"
+jwt = "0.16.0"
+serde = { version = "1.0.213", features = ["derive"] }
+serde_json = "1.0.132"
+hmac = "0.12.1"
+sha2 = "0.10.8"
+deadpool-postgres = { version = "0.14.0", features = ["rt_tokio_1"] }
+log = "0.4.22"
+env_logger = "0.11.5"
+dotenvy = "0.15.7"
